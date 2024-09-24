@@ -3,6 +3,10 @@
 
 using namespace std;
 
+void showOutput(string line, int number){
+    cout << line << endl << number << endl;
+}
+
 int main(){
     int number;
     string line;
@@ -12,7 +16,7 @@ int main(){
     if(number < 1 || number > line.length() || (line.length()<1) || line.length()> pow(10,5))
         return 0;
 
-    cout << line << endl << number << endl;
+    showOutput(line,number);
 
     return 0;
 }
