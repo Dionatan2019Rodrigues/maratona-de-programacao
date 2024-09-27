@@ -16,6 +16,8 @@ int main(){
     if(number < 1 || number > line.length() || (line.length()<1) || line.length()> pow(10,5))
         return 0;
 
+    //TODO: process();
+
     showOutput(line,number);
 
     return 0;
