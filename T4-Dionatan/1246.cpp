@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
@@ -8,25 +9,49 @@ void showOutput(int number){
 
 int main(){
 
-    int parkingLength, events, placa, vehicleLenght;
-    string status;
+    int parkingLength, events, placa, vehicleLenght, proximo;
+    char status;
 
-    cin >> parkingLength >> events;
-    if(parkingLength<1 || parkingLength>1000 || events<1 || events>1000)
-        return 0;
+    while(cin >> parkingLength >> events){
 
-    for(int i=0;i<events;i++){
-        cin >> status >> placa;
-        if(placa<1000 || placa>9999)
-            return 0;
-        if(status == "C"){
-            cin >> vehicleLenght;
-            if(vehicleLenght<1 || vehicleLenght>1000)
-                return 0;
+        vector<int> estacionamento(parkingLength, -1);
+        int faturamento = 0;
+
+        for(int i=0;i<events;i++){
+
+            cin >> status >> placa;
+
+            if (status == 'C') {
+
+                cin >> vehicleLenght;
+
+                int cont =0, i;
+                for(i=0;i<estacionamento.size();i++){
+                    if(estacionamento[i]==-1){
+                        cont++;
+                        if(cont==vehicleLenght){
+                            break;
+                        }
+                    }else{
+                        cont=0;
+                    }
+                }
+
+                if(i!=estacionamento.size()){
+                    faturamento += 10;
+                    for(int j=0;j<vehicleLenght;j++){
+                        estacionamento[j+i-cont+1] = placa;
+                    }
+                }
+            }else{
+                for(int i=0;i<estacionamento.size();i++){
+                    if(estacionamento[i]==placa){
+                        estacionamento[i] = -1;
+                    }
+                }
+            }
         }
-
+        cout << faturamento << endl; 
     }
-
-
     return 0;
 }
