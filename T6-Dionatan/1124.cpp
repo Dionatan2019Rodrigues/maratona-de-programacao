@@ -18,6 +18,7 @@ int main(){
         somaDiametros = D1+D2;
         double menorDimensao = (L<C)?L:C; 
 
+        //TODO: make do the second elevator test case
         if(somaDiametros <= D){
             cout << "S" << endl;
         }else{
