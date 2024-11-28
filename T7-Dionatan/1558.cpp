@@ -3,7 +3,7 @@
 
 using namespace std;
 
-bool is_sum_of_two_squares(int n) {
+bool eh_soma_de_dois_quadrados(int n) {
     // Caso base: números negativos não podem ser representados
     if (n < 0) {
         return false;
@@ -41,7 +41,7 @@ bool is_sum_of_two_squares(int n) {
 int main() {
     int num;
     while (cin >> num) {
-        if (is_sum_of_two_squares(num))
+        if (eh_soma_de_dois_quadrados(num))
             cout << "YES" << endl;
         else
             cout << "NO" << endl;
