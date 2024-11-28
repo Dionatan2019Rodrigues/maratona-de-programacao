@@ -5,7 +5,6 @@
 using namespace std;
 
 
-//TODO: corrigir lógica de compra de gols e pontuações 
 int main() {
     int N, G;
     while (cin >> N >> G) {
@@ -19,6 +18,7 @@ int main() {
         sort(diferencaDeGols.begin(), diferencaDeGols.end());
         int points = 0;
         
+//TODO: corrigir lógica de compra de gols e pontuações 
         for(int i=0;i<diferencaDeGols.size();i++){
             if(diferencaDeGols[i] == 0){
                 if(G > 0){
