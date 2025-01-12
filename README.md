@@ -9,7 +9,7 @@ Os trabalhos devem ser enviados em .rar e para isso segue a baixo o método de c
 ### Problemas resolvidos
 Segue a baixo a lista de questões desenvolvidas em ordem alfanumérica com seus respectivos links, plataformas e linguagens de programação.
 
-<table style="text-align: center text-decoration: none">
+<table style="text-align: center; text-decoration: none">
     <tr >
         <th style="text-align: center">ID</th>
         <th style="text-align: center">PLATAFORMA</th>
