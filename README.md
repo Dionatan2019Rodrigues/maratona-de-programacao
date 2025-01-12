@@ -2,14 +2,14 @@
 Disciplina da faculdade de Ciência da Computação que busca a resolução de problemas envolvendo programação em liguagens C, C++ ou python. Existem várias categorias de problemas como podemos citar: entrada e saída, strings, grafos , geométricos , estrutura de dados, entre outras.
 
 ### Compactação em .rar
-Os t- devem ser enviados em .rar e para isso segue a baixo o método de compactação <strong>via terminal do linux</strong>.
+Os trabalhos devem ser enviados em .rar e para isso segue a baixo o método de compactação <strong>via terminal do linux</strong>.
     
     rar a Ti-Dionatan.rar Ti-Dionatan
 
 ### Problemas resolvidos
 Segue a baixo a lista de questões desenvolvidas em ordem alfanumérica com seus respectivos links, plataformas e linguagens de programação.
 
-<table style="text-align: center">
+<table style="text-align: center text-decoration: none">
     <tr >
         <th style="text-align: center">ID</th>
         <th style="text-align: center">PLATAFORMA</th>
